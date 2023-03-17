@@ -1,0 +1,81 @@
+columns:
+  - LIMIT_BAL
+  - SEX
+  - EDUCATION
+  - MARRIAGE
+  - AGE
+  - PAY_SEPT
+  - PAY_AUG
+  - PAY_JUL
+  - PAY_JUN
+  - PAY_MAY
+  - PAY_APR
+  - BILL_AMT_SEPT
+  - BILL_AMT_AUG
+  - BILL_AMT_JUL
+  - BILL_AMT_JUN
+  - BILL_AMT_MAY
+  - BILL_AMT_APR
+  - PAY_AMT_SEPT
+  - PAY_AMT_AUG
+  - PAY_AMT_JUL
+  - PAY_AMT_JUN
+  - PAY_AMT_MAY
+  - PAY_AMT_APR
+  - Default_Pay: int64
+
+numerical_columns:
+  - LIMIT_BAL
+  - AGE
+  - BILL_AMT_SEPT
+  - BILL_AMT_AUG
+  - BILL_AMT_JUL
+  - BILL_AMT_JUN
+  - BILL_AMT_MAY
+  - BILL_AMT_APR
+  - PAY_AMT_SEPT
+  - PAY_AMT_AUG
+  - PAY_AMT_JUL
+  - PAY_AMT_JUN
+  - PAY_AMT_MAY
+  - PAY_AMT_APR
+
+categorical_columns:
+    - SEX
+    - EDUCATION
+    - MARRIAGE
+    - PAY_SEPT
+    - PAY_AUG
+    - PAY_JUL
+    - PAY_JUN
+    - PAY_MAY
+    - PAY_APR
+
+drop_columns:
+  - ID
+
+eval_columns:
+    LIMIT_BAL: float
+    SEX: category
+    EDUCATION: category
+    MARRIAGE: category
+    AGE: float
+    PAY_0: category
+    PAY_2: category
+    PAY_3: category
+    PAY_4: category
+    PAY_5: category
+    PAY_6: category
+    BILL_AMT1: float
+    BILL_AMT2: float
+    BILL_AMT3: float
+    BILL_AMT4: float
+    BILL_AMT5: float
+    BILL_AMT6: float
+    PAY_AMT1: float
+    PAY_AMT2: float
+    PAY_AMT3: float
+    PAY_AMT4: float
+    PAY_AMT5: float
+    PAY_AMT6: float
+    DEFAULT.PAYMENT.NEXT.MONTH: category
